@@ -55,7 +55,7 @@ const Modal = ({ product, count, onClose }) => {
             <img src={`/public/img/${product.img}`} alt={product.title} />
           </div>
           <div className={css.info}>
-            <p>{product.tilte}</p>
+            <p>{product.title}</p>
             <p>{formmatCurrency(product.price)}</p>
             {product.discount > 0 && <p>{product.discount}%</p>}
             <p>{count}</p>
